@@ -1,3 +1,30 @@
+
+//preloader
+setTimeout(() => {
+  preloader.classList.add("d-none")
+  preloader.classList.add("overflow-hidden")
+}, 2000)
+//back-to-top
+ document.addEventListener("DOMContentLoaded", function () {
+  const button = document.getElementById("back-to-top");
+
+  // Show the button when the user scrolls down 200px from the top
+  window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          button.style.display = "block";
+      } else {
+          button.style.display = "none";
+      }
+  };
+
+  // Scroll back to the top when the button is clicked
+  button.onclick = function () {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  };
+});
+
+
 //s2-slider
 
 $('.s2-slider').slick({
@@ -48,59 +75,36 @@ $('.s2-slider').slick({
   });
   // s3-slider
 
-  // $('.s3-slider').slick({
-  //   // centerMode: true,
-  //   // centerPadding: '60px',
-  //   slidesToShow: 1.5,
-  //   autoplay: true,
-  //   speedAutoplay: 2000,
-  //   responsive: [
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         arrows: false,
-  //         // centerMode: true,
-  //         // centerPadding: '40px',
-  //         slidesToShow: 3
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //         arrows: false,
-  //         // centerMode: true,
-  //         // centerPadding: '40px',
-  //         slidesToShow: 1
-  //       }
-  //     }
-  //   ]
-  // });
   $('.s3-slider').slick({
     centerMode: true,
-    centerPadding: '100px',
-    slidesToShow: 2,
-    dots: true,
-    arrows: true,
-    swipe: true,
-  //  infinite: true,
-    swipeToSlide: true,
-    //adaptiveHeight: true,
+    centerPadding: '20%',
+    slidesToShow: 1,
+    infinite: true,
+    autoplay: true,
+    speedAutoplay: 2000,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: "unslick"
+      },
+    ]
   });
-  
   //s7-slider
   $('.s7-slider').slick({
     dots: true,
     infinite: true,
+    centerMode: true,
+    centerPadding: '20%',
     speed: 300,
-    slidesToShow: 1.4,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     speedAutoplay: 2000,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1250,
         settings: {
-          slidesToShow: 1.3,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
           dots: true
@@ -109,15 +113,18 @@ $('.s2-slider').slick({
       {
         breakpoint: 800,
         settings: {
-          slidesToShow: 1.1,
-          slidesToScroll: 1
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: null,
+    // centerPadding: '0%',
         }
       },
       {
         breakpoint: 650,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          centerMode: null,
         }
       }
 

@@ -3,9 +3,9 @@
 :root {
     /* font-size */
     --fs-sm: 14px;
-    --fs-1sm: 20px;
-    --fs-2sm: 24px;
-    --fs-md: 42px;
+    --fs-1sm: 16px;
+    --fs-2sm: 16px;
+    --fs-md: 32px;
     --fs-lg: 44px;
     --fs-1lg: 32px;
     /* color */
@@ -89,9 +89,9 @@
 @media (min-width:450px) {
     :root{
         --fs-sm: 16px;
-        --fs-1sm: 20px;
-        --fs-2sm: 24px;
-        --fs-md: 42px;
+        --fs-1sm: 16px;
+        --fs-2sm: 16px;
+        --fs-md: 34px;
         --fs-lg: 44px;
         --fs-1lg: 42px;
     }
@@ -100,9 +100,9 @@
 @media (min-width:576px) {
     :root{
         --fs-sm: 16px;
-        --fs-1sm: 20px;
-        --fs-2sm: 24px;
-        --fs-md: 42px;
+        --fs-1sm: 16px;
+        --fs-2sm: 20px;
+        --fs-md: 38px;
         --fs-lg: 44px;
         --fs-1lg: 46px;
     }
@@ -111,8 +111,8 @@
 @media (min-width:768px) {
     :root{
         --fs-sm: 16px;
-        --fs-1sm: 20px;
-        --fs-2sm: 24px;
+        --fs-1sm: 17px;
+        --fs-2sm: 22px;
         --fs-md: 31px;
         --fs-lg: 44px;
         --fs-1lg: 51px;
@@ -122,7 +122,7 @@
 @media (min-width:992px) {
     :root{
         --fs-sm: 16px;
-        --fs-1sm: 20px;
+        --fs-1sm: 18px;
         --fs-2sm: 24px;
         --fs-md: 42px;
         --fs-lg: 44px;
