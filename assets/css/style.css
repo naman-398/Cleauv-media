@@ -442,7 +442,7 @@
     margin-left: auto;
     content: "";
     background-image: url(../images/s7-arrow.png) !important;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     background-size: var(--bs-accordion-btn-icon-width);
     transition: var(--bs-accordion-btn-icon-transition);
 }
@@ -461,9 +461,6 @@
     transition: all 300ms linear;
 }
 
-.accordion-button:focus {
-    display: none;
-}
 
 .footer-padding-top {
     padding-top: 55px;
