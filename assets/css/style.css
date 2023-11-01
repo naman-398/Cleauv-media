@@ -848,9 +848,9 @@
     order: 23;
 }
 
-.span1,
-.span2,
-.span3 {
+.line1,
+.line2,
+.line3 {
     transition: all 0.2s ease-in-out;
 }
 
@@ -866,7 +866,6 @@
     transform: rotate(48deg) translate(18px, 14px);
     width: 21px !important;
 }
-
 .nav3 {
     transform: rotate(-45deg) translate(16px, -14px);
     width: 21px !important;

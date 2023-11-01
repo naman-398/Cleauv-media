@@ -172,9 +172,9 @@ let loadtake = document.querySelector(".nav-logo")
 let finish = document.querySelectorAll(".finish");
 let overlay = document.querySelector(".over-layer")
 let bgbody = document.querySelector(".bg-bodys");
-let span1 = document.querySelector(".span1");
-let span2 = document.querySelector(".span2");
-let span3 = document.querySelector(".span3");
+let span1 = document.querySelector(".line1");
+let span2 = document.querySelector(".line2");
+let span3 = document.querySelector(".line3");
 nav.addEventListener("click", function () {
     menubar.classList.toggle("left-0")
     nav.classList.toggle("cross-bg")
