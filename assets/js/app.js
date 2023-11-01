@@ -3,7 +3,7 @@
 setTimeout(() => {
   preloader.classList.add("d-none")
   preloader.classList.add("overflow-hidden")
-}, 0)
+}, 3000)
 //back-to-top
  document.addEventListener("DOMContentLoaded", function () {
   const button = document.getElementById("back-to-top");
